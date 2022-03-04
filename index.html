@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Notas de texto</title>
+    <link rel="stylesheet" href="./assets/stylesheet/reset.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/script.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        Notas de Texto
+    </div>
+    <section id="table">
+        <form method="POST">
+            <div id="input-data">
+                <input id="titulo" class="input-text" placeholder="Título" type="text" size = "40" required />
+                <input id="texto" class="input-text" placeholder="Texto" type="text"  size = "140" required />
+               
+                <input class="input-btn" type="submit" value="Adicionar" onclick="return addToTable()"  />
+            </div>
+        </form>
+
+        <table id="myTable">
+                <tr id="0">
+                <th>ID</th>
+                <th>Título</th>
+                <th>Texto</th>
+                <th>Excluir</th>
+                <th>Editar</th>
+
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
